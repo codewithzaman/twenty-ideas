@@ -2,24 +2,16 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 
 import './App.css'
+import HomeScreen from './screens/home/HomeScreen'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     
-    <div data-theme="bumblebee">
-      <h1 className="text-5xl font-bold underline">
-      Hello world!
-      <br />
-      <button className="btn">Button</button>
-<button className="btn btn-neutral">Neutral</button>
-<button className="btn btn-primary">Primary</button>
-<button className="btn btn-secondary">Secondary</button>
-<button className="btn btn-accent">Accent</button>
-<button className="btn btn-ghost">Ghost</button>
-<button className="btn btn-link">Link</button>
-    </h1>
+    <div className='flex flex-col items-center p-4 md:p-10'>
+      <div className='max-w-2xl w-full items-center'><HomeScreen/></div>
+     
     </div>
   )
 }
